@@ -8,7 +8,7 @@ require 'json'
 
 @credentials = []
 @last_height = nil
-@min_height = 0
+@min_height = 1000
 @admins = ["man1", "adamcook124", "isaacgoldberg"]
 @last_control = nil
 @running = false
@@ -96,11 +96,13 @@ def main
   get_creds
   tw_authorize
 
+  p "Ready to rock."
+
   # main loop
   while true
     handle_control_message
     create_tweet if @running
-    sleep(10)
+    sleep(600) # ten minutes
   end
 end
 

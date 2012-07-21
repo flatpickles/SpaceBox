@@ -1,0 +1,4 @@
+SpaceBox Script
+by Matt Nichols
+
+This program was initially designed to live-tweet the altitude of my friends' weather balloon, as its GPS updated data recorded by aprs.fi and exposed by their API. Alas, the balloon's GPS transceiver was never operational during its flight, but some information about the voyage was manually recorded on the Twitter account @DropboxInSpace.

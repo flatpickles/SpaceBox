@@ -54,7 +54,7 @@ def get_tweet
   info = get_aprs_data
   return if !info
   feet = (3.28084 * info["altitude"]).floor
-  link = "https://maps.google.com/maps?q=%s,+%s+(SpaceBox+balloon+altitude:+%d+feet)&iwloc=A&hl=en" % [info["lat"], info["lng"], feet]
+  link = "https://maps.google.com/maps?q=%s,+%s+(Balloon+altitude:+%d+feet)&iwloc=A&hl=en" % [info["lat"], info["lng"], feet]
   [link, feet]
 end
 
